@@ -1,0 +1,400 @@
+@import url(commons.css);
+/* コピペセット
+ＮＰＣ@media (max-width: 1199px)
+Ｔａｂ@media (max-width: 991px)
+携帯横@media (max-width: 767px)
+携帯縦@media (max-width: 575px)
+メディアクエリ */
+
+/* 共通 mainは丸っと1690px*/
+/* 7セクション共 */
+main section {
+  margin-bottom: 60px;
+  @media (max-width: 1199px) and (min-width: 992px) {
+    margin-bottom: 30px;
+  }
+  @media (max-width: 767px) {
+    margin-bottom: 30px;
+  }
+}
+/* おにぎりh2と下を縮める */
+main section > h2 {
+  margin-bottom: -22px;
+}
+/* ーーーー
+セクション１
+PR＆NEWS
+ーーーーー */
+main section:first-child {
+  margin-top: 50px;
+  flex-direction: row-reverse;
+  @media (max-width: 991px) {
+    margin-top: 90px;
+  }
+}
+/* ーーー
+ＰＲｂｏｘ
+ーーーーー */
+/* ここにオバドゥンじゃないとスリックのボタンが出てくる */
+main section:first-child div {
+  overflow: hidden;
+}
+main section:first-child div.pr {
+  border: 5px solid var(--noriiro);
+  @media (max-width: 1199px) and (min-width: 992px) {
+    border: none;
+  }
+  @media (max-width: 767px) {
+    border: none;
+  }
+}
+/* PRの外身を大きくする */
+main section:first-child div.flex1 > .oya,
+main section:first-child div.flex1 > .oya ul.pr,
+main section:first-child div.flex1 > .oya ul.pr div {
+  height: 100%;
+}
+ul.pr img {
+  height: 100%;
+  object-fit: cover;
+  @media (max-width: 1199px) and (min-width: 992px) {
+    width: 100%;
+  }
+  @media (max-width: 767px) {
+    width: 100%;
+  }
+}
+/* PRとP写真の中身 */
+.nakami {
+  width: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* ーーーーー
+ＮＥＷＳｂｏｘ
+ーーーーーーー */
+main section:first-child div.news {
+  padding: 50px;
+  @media (max-width: 1199px) and (min-width: 992px) {
+    padding: 15px 25px;
+  }
+  @media (max-width: 767px) {
+    padding: 15px 25px;
+  }
+}
+main section:first-child div hgroup h2 {
+  width: 125px;
+  height: 41px;
+  margin-bottom: 18px;
+  background: var(--shakeiro);
+  box-shadow: 11px 9px 7px 0px rgba(0, 0, 0, 0.25);
+  padding: 5px 30px;
+  @media (max-width: 1199px) and (min-width: 992px) {
+    margin-bottom: 15px;
+  }
+  @media (max-width: 767px) {
+    margin-bottom: 15px;
+  }
+}
+main section:first-child div hgroup h2:hover {
+  opacity: 0.7;
+}
+main section:first-child div hgroup p {
+  margin-bottom: 50px;
+  @media (max-width: 1199px) and (min-width: 992px) {
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  @media (max-width: 767px) {
+    margin-bottom: 10px;
+    text-align: left;
+  }
+}
+main section:first-child div dl {
+  & dt {
+    margin-bottom: 30px;
+    @media (max-width: 1199px) and (min-width: 992px) {
+      margin-bottom: 0;
+    }
+    @media (max-width: 767px) {
+      margin-bottom: 0;
+    }
+  }
+  & dd {
+    margin-bottom: 50px;
+    @media (max-width: 1199px) and (min-width: 992px) {
+      margin-bottom: 10px;
+    }
+    @media (max-width: 767px) {
+      margin-bottom: 10px;
+    }
+  }
+}
+/* ーーー
+メンバー
+ーーーー*/
+section.member {
+  overflow: hidden;
+  font-size: 35px;
+}
+section.member ul li figure {
+  @media (max-width: 1199px) {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+  }
+}
+section.member ul img {
+  @media (max-width: 1199px) {
+    margin: 10px auto 10px 10px;
+    width: 28.57%;
+  }
+}
+section.member ul li figure figcaption {
+  width: 100%;
+  bottom: 0;
+  background-color: #fff;
+  @media (max-width: 1199px) {
+    left: 20%;
+    bottom: unset;
+    background-color: unset;
+  }
+}
+/* ーーー
+おにスケ
+ーーーー */
+.Onisuke div dl dt {
+  padding-top: 48px;
+  margin-bottom: 30px;
+  background-repeat: no-repeat;
+  background-position: left 20px top 20px, right 20px top 20px;
+  @media (max-width: 1280px) {
+    padding-top: 78px;
+    background-position: center top 10px;
+  }
+  /* ここまで991pxノリボ10px計算 */
+  @media (max-width: 1199px) and (min-width: 992px) {
+    padding-top: 48px;
+    background-position: left 20px top 20px, right 20px top 20px;
+    margin-bottom: 0px;
+  }
+  @media (max-width: 767px) {
+    /* ここから991pxノリボ5px計算 */
+    padding-top: 53px;
+    background-position: left 25px top 25px, right 25px top 25px;
+    margin-bottom: 0px;
+  }
+  @media (max-width: 575px) {
+    padding-top: 83px;
+    background-position: center top 15px;
+  }
+}
+/* このマジ左右はノリボにくっ付かないようにするためだけ */
+.Onisuke div dl dd {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+/* 日付アンダー鮭 */
+.Onisuke div dl dd.ssize {
+  &::after {
+    width: 179px;
+  }
+  margin-bottom: 70px;
+  @media (max-width: 1199px) and (min-width: 992px) {
+    margin-bottom: 20px;
+  }
+  @media (max-width: 767px) {
+    margin-bottom: 20px;
+  }
+}
+/* ddのマジボがバラバラなので一気に設定 */
+.Onisuke div dl dd.one {
+  margin-bottom: 60px;
+  @media (max-width: 1199px) and (min-width: 992px) {
+    margin-bottom: 20px;
+  }
+  @media (max-width: 767px) {
+    margin-bottom: 20px;
+  }
+}
+.Onisuke div dl dd.two {
+  /* ここも鮭30ボ10込みの110px(本来70px) */
+  margin-bottom: 110px;
+  /* ここも鮭30ボ15込みの65px(本来20px) */
+  @media (max-width: 1199px) and (min-width: 992px) {
+    margin-bottom: 65px;
+  }
+  @media (max-width: 767px) {
+    margin-bottom: 65px;
+  }
+}
+/* メディア出演 */
+main section dl.left dt {
+  background-image: url(../Onigiri-img/1TopPage/4OniSukeFrame/TV.svg), url(../Onigiri-img/1TopPage/4OniSukeFrame/TV.svg);
+  background-size: 73px 63.3px;
+}
+/* ライブ出演 */
+main section dl.right dt {
+  background-image: url(../Onigiri-img/1TopPage/4OniSukeFrame/MIC.svg), url(../Onigiri-img/1TopPage/4OniSukeFrame/MIC.svg);
+  background-size: 42.48px 63.3px;
+}
+/* ーーーー
+グッズ紹介
+ーーーーー */
+main section.goods div {
+  background-image: url(../Onigiri-img/1TopPage/5GoodsFrame/KoshiHeart.png);
+  background-repeat: no-repeat;
+  background-position: center top 74.82px;
+  /* これは画像サイズじゃなくてdivの高さ485-ハート自体の余白(74.82+26.03=100.85)の高さ */
+  background-size: 384.15px;
+  padding-bottom: 26.03px;
+  @media (max-width: 575px) {
+    /* ノリボ細くなったら余白5pxで計算 */
+    background-position: left 72.86px top 160.43px;
+    /* (243-160.43+10.15=72.42) */
+    background-size: 72.42px;
+    padding-bottom: 10.15px;
+  }
+}
+/* 80周年アンダー鮭 */
+main section.goods dl dt {
+  margin-top: 13px;
+  margin-bottom: 29.05px;
+  text-shadow: 11px 9px 7px rgba(0, 0, 0, 0.25);
+  &::after {
+    width: 310px;
+  }
+  @media (max-width: 575px) {
+    margin-bottom: 9.05px;
+  }
+}
+main section.goods dl dd.towel {
+  @media (max-width: 575px) {
+    margin-bottom: 48px;
+  }
+}
+/* ホバーしてハートにする */
+.noributton:hover::before,
+.noributton:hover::after {
+  content: "";
+  position: absolute;
+  width: 77px;
+  height: 132px;
+  background-color: var(--noriiro);
+}
+.happi:hover::before,
+.happi:hover::after,
+.akusuta:hover::before,
+.akusuta:hover::after {
+  bottom: -20px;
+  border-radius: 100px 100px 0 0;
+}
+.towel:hover::before,
+.towel:hover::after,
+.Tshirt:hover::before,
+.Tshirt:hover::after {
+  top: -20px;
+  border-radius: 0 0 100px 100px;
+}
+/* 縦 */
+.noributton:hover::after {
+  transform: rotate(0deg);
+  transform-origin: 100% 100%;
+}
+.noributton5:hover::after {
+  left: 0px;
+}
+.noributton6:hover::after {
+  right: 11px;
+}
+/* 横 */
+.happi:hover::before {
+  left: -76px;
+  transform: rotate(90deg);
+  transform-origin: 100% 100%;
+}
+.towel:hover::before {
+  left: 19px;
+  transform: rotate(-90deg);
+  transform-origin: 35% 35%;
+}
+.akusuta:hover::before {
+  right: -63px;
+  transform: rotate(-90deg);
+  transform-origin: 0% 100%;
+}
+.Tshirt:hover::before {
+  right: -63px;
+  transform: rotate(90deg);
+  transform-origin: 0% 0%;
+}
+.noributton a {
+  z-index: 1;
+  position: relative;
+}
+/* ーーーーー
+姉妹グループ
+ーーーーーー */
+
+/* ーーーーーーー
+プロデューサー紹介
+ーーーーーーーー */
+/* 単独のフレボにした */
+div.p-sama {
+  gap: 10px;
+  @media (max-width: 575px) {
+    display: block;
+  }
+}
+/* P写真 */
+div.p-sama div.flex1 {
+  @media (max-width: 575px) {
+    height: 215px;
+    margin-bottom: 30px;
+  }
+}
+div.p-sama div.oya {
+  overflow: hidden;
+}
+div.p-sama div.oya,
+div.p-sama div.oya picture,
+div.p-sama div.oya picture img {
+  height: 100%;
+  @media (max-width: 575px) {
+    width: 100%;
+  }
+}
+div.p-sama div.oya picture img {
+  object-fit: cover;
+}
+div.p-sama div.oya p.nakami {
+  @media (max-width: 991px) and (min-width: 576px) {
+    display: none;
+  }
+  @media (max-width: 575px) {
+    width: auto;
+  }
+}
+/* 紹介文 */
+div.p-sama dl {
+  flex: 2;
+  padding: 30px;
+  background-color: #fff;
+  & dt {
+    &::after {
+      content: "";
+      display: block;
+      height: 8px;
+      margin-top: 30px;
+      background-color: #706969;
+      border-radius: 20px;
+    }
+  }
+  & dd {
+    margin-top: 7%;
+    @media (max-width: 1199px) {
+      margin-top: 30px;
+    }
+  }
+}

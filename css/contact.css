@@ -1,0 +1,98 @@
+@import url(commons.css);
+/* コピペセット
+ＮＰＣ@media (max-width: 1199px)
+Ｔａｂ@media (max-width: 991px)
+携帯横@media (max-width: 767px)
+携帯縦@media (max-width: 575px)
+メディアクエリ */
+main article div.tyuigaki,
+main article div.menu {
+  margin-bottom: 60px;
+  @media (max-width: 1199px) {
+    margin-bottom: 30px;
+  }
+}
+/* ーーーーーーー
+問い合わせ注意書き
+ーーーーーーーーー */
+main article div.tyuigaki {
+  padding: 30px 110px;
+  border-radius: 90px;
+  @media (max-width: 991px) {
+    padding: 35px 45px;
+  }
+  @media (max-width: 767px) {
+    padding: 20px 10px 40px;
+  }
+  & h1 {
+    color: #ccc;
+    margin-bottom: 20px;
+  }
+  & p.undermentaiko {
+    width: fit-content;
+    margin-bottom: 20px;
+    border-bottom: 5px solid var(--mentaiko);
+  }
+}
+/* ーーーーーー
+問い合わせ本編
+ーーーーーーー */
+main article div.menu {
+  padding: 50px 60px 90px 60px;
+  @media (max-width: 767px) {
+    margin-bottom: 30px;
+    padding: 50px 15px 90px 15px;
+  }
+  @media (max-width: 767px) {
+    padding: 50px 10px 96px 10px;
+  }
+  & aside {
+    margin-bottom: 50px;
+  }
+}
+.toibox {
+  gap: 60px;
+  font-weight: bold;
+  /* background-color: aqua; */
+}
+main fieldset legend {
+  padding-bottom: 15px;
+  /* background-color: yellow; */
+}
+main input[type="text"],
+main input[type="email"],
+main input[type="tel"],
+main textarea {
+  width: 100%;
+  /* background-color: blueviolet; */
+}
+main input[type="text"],
+main input[type="email"],
+main input[type="tel"] {
+  height: 44px;
+  margin-bottom: 30px;
+}
+main textarea {
+  height: 270px;
+  line-height: 1.5;
+  margin-bottom: 37px;
+}
+main form button {
+  border: none;
+}
+main form p {
+  display: block;
+}
+/* 鮭ボタン２文字 */
+.shakebutton2 {
+  width: 71px;
+  right: 47%;
+  left: auto;
+  bottom: 37px;
+}
+/* 個人情報保護法 */
+main article section.noribox {
+  width: 100%;
+  padding: 20px 0px;
+  border-color: var(--konbu);
+}

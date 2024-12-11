@@ -1,0 +1,32 @@
+@import url(commons.css);
+/* コピペセット
+ＮＰＣ@media (max-width: 1199px)
+Ｔａｂ@media (max-width: 991px)
+携帯横@media (max-width: 767px)
+携帯縦@media (max-width: 575px)
+メディアクエリ */
+main article {
+  padding: 100px 110px;
+  margin-bottom: unset;
+  border-radius: 90px;
+  @media (max-width: 1199px) {
+    padding: 100px 20px;
+  }
+  @media (max-width: 991px) {
+    padding: 10px 45px 40px;
+  }
+  @media (max-width: 767px) {
+    padding: 10px 10px 40px;
+  }
+  & h1 {
+    color: #ccc;
+    margin-bottom: 65px;
+    @media (max-width: 991px) {
+      margin-bottom: 10px;
+    }
+  }
+}
+/* サンクスのホーム鮭だけめっちゃ下に持ってく */
+main p.homeshake {
+  bottom: -70px;
+}

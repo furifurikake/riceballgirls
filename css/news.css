@@ -1,0 +1,124 @@
+@import url(commons.css);
+/* コピペセット
+ＮＰＣ@media (max-width: 1199px)
+Ｔａｂ@media (max-width: 991px)
+携帯横@media (max-width: 767px)
+携帯縦@media (max-width: 575px)
+メディアクエリ */
+/* ーーーーー
+ノリボ全体
+ーーーーー */
+main article {
+  padding: 50px 0;
+  @media (max-width: 991px) {
+    padding: 30px 0;
+  }
+}
+main article h1 {
+  margin-left: 60px;
+  margin-right: 60px;
+  /* 55だが文字to文字だと64px */
+  margin-bottom: 64px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  height: 41px;
+  background: var(--shakeiro);
+  box-shadow: 11px 9px 7px 0px rgba(0, 0, 0, 0.25);
+  @media (max-width: 991px) {
+    margin-left: 20px;
+    margin-right: 20px;
+    /* 35だが文字to文字だと44 */
+    margin-bottom: 44px;
+  }
+}
+/* ーーーーーーー
+アコーディオン
+ーーーーーーー */
+main article div.accordion details {
+  /* 50だが文字考慮56 */
+  margin-bottom: 56px;
+  background-color: var(--shakeiro);
+  @media (max-width: 991px) {
+    margin-bottom: 36px;
+  }
+}
+/* ーーーーーーーーーーーーーーーーー
+アコーディオンの▼をおにぎりにする
+ーーーーーーーーーーーーーーーーー */
+/* 矢印を消す */
+summary::-webkit-details-marker {
+  display: none;
+}
+article details summary {
+  display: block;
+  cursor: pointer;
+  &.kate {
+    padding: 6px 46px 6px 5px;
+  }
+  &.kou {
+    padding: 6px 51px 6px 5px;
+  }
+}
+summary:before,
+summary:after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  bottom: 2px;
+  right: 1px;
+}
+summary:before {
+  content: url("../Onigiri-img/2NewsPage/OniSelectButton.png");
+  width: 40px;
+  height: 37px;
+}
+summary:after {
+  transition: 0.1s;
+}
+/* アコーディオン開けたらアイコンを回転 */
+details[open] > summary::before {
+  transform: rotate(180deg);
+}
+/* ーー
+本文
+ーー */
+article section dl {
+  margin-bottom: 55px;
+  @media (max-width: 991px) {
+    margin-bottom: 35px;
+  }
+}
+article section div.allflex {
+  margin-left: 75px;
+  gap: 180px;
+  @media (max-width: 1199px) {
+    gap: 90px;
+  }
+  @media (max-width: 991px) {
+    gap: 60px;
+  }
+  @media (max-width: 767px) {
+    margin-left: 25px;
+    gap: 35px;
+  }
+}
+.leftside {
+  flex-basis: 80px;
+  text-align: left;
+}
+.rightside {
+  flex: auto;
+}
+/* mサイズ3文字 */
+/* .shake3moji {
+  &::after {
+    width: 60px;
+    text-align: left;
+  }
+} */
+/* mサイズ4文字 */
+/* .shake4moji {
+  &::after {
+    width: 80px;
+  }
+} */

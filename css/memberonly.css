@@ -1,0 +1,130 @@
+@import url(commons.css);
+/* コピペセット
+ＮＰＣ@media (max-width: 1199px)
+Ｔａｂ@media (max-width: 991px)
+携帯横@media (max-width: 767px)
+携帯縦@media (max-width: 575px)
+メディアクエリ */
+/* ーーーーー
+共通縁取り
+ーーーーー */
+article.koshi dl dd,
+.fuchimentai {
+  color: #eee;
+  text-shadow: 1px 1px 0 var(--mentaiko), -1px -1px 0 var(--mentaiko), -1px 1px 0 var(--mentaiko), 1px -1px 0 var(--mentaiko), 0px 1px 0 var(--mentaiko), 0-1px 0 var(--mentaiko), -1px 0 0 var(--mentaiko), 1px 0 0 var(--mentaiko);
+}
+article.kinu dl dd,
+.fuchishake {
+  color: #fff;
+  text-shadow: 1px 1px 0 var(--shakeiro), -1px -1px 0 var(--shakeiro), -1px 1px 0 var(--shakeiro), 1px -1px 0 var(--shakeiro), 0px 1px 0 var(--shakeiro), 0 -1px 0 var(--shakeiro), -1px 0 0 var(--shakeiro), 1px 0 0 var(--shakeiro);
+}
+article.mitsu dl dd,
+.fuchitsunamayo {
+  color: #dcdcdc;
+  text-shadow: 1px 1px 0 var(--tsunamayo), -1px -1px 0 var(--tsunamayo), -1px 1px 0 var(--tsunamayo), 1px -1px 0 var(--tsunamayo), 0px 1px 0 var(--tsunamayo), 0 -1px 0 var(--tsunamayo), -1px 0 0 var(--tsunamayo), 1px 0 0 var(--tsunamayo);
+}
+article.iku dl dd,
+.fuchikonbu {
+  color: #eee;
+  text-shadow: 1px 1px 0 var(--konbu), -1px -1px 0 var(--konbu), -1px 1px 0 var(--konbu), 1px -1px 0 var(--konbu), 0px 1px 0 var(--konbu), 0 -1px 0 var(--konbu), -1px 0 0 var(--konbu), 1px 0 0 var(--konbu);
+}
+article.hino dl dd,
+.fuchiwakame {
+  color: #eee;
+  text-shadow: 1px 1px 0 var(--wakame), -1px -1px 0 var(--wakame), -1px 1px 0 var(--wakame), 1px -1px 0 var(--wakame), 0px 1px 0 var(--wakame), 0 -1px 0 var(--wakame), -1px 0 0 var(--wakame), 1px 0 0 var(--wakame);
+}
+article.yama dl dd,
+.fuchisalt {
+  color: #999;
+  text-shadow: 1px 1px 0 var(--salt), -1px -1px 0 var(--salt), -1px 1px 0 var(--salt), 1px -1px 0 var(--salt), 0px 1px 0 var(--salt), 0 -1px 0 var(--salt), -1px 0 0 var(--salt), 1px 0 0 var(--salt);
+}
+article.nasu dl dd,
+.fuchitakana {
+  color: #eee;
+  text-shadow: 1px 1px 0 var(--takana), -1px -1px 0 var(--takana), -1px 1px 0 var(--takana), 1px -1px 0 var(--takana), 0px 1px 0 var(--takana), 0 -1px 0 var(--takana), -1px 0 0 var(--takana), 1px 0 0 var(--takana);
+}
+article.natsu dl dd,
+.fuchiume {
+  color: #dcdcdc;
+  text-shadow: 1px 1px 0 var(--ume), -1px -1px 0 var(--ume), -1px 1px 0 var(--ume), 1px -1px 0 var(--ume), 0px 1px 0 var(--ume), 0 -1px 0 var(--ume), -1px 0 0 var(--ume), 1px 0 0 var(--ume);
+}
+article.sasa dl dd,
+.fuchinitamago {
+  color: #fff;
+  text-shadow: 1px 1px 0 var(--nitamago), -1px -1px 0 var(--nitamago), -1px 1px 0 var(--nitamago), 1px -1px 0 var(--nitamago), 0px 1px 0 var(--nitamago), 0 -1px 0 var(--nitamago), -1px 0 0 var(--nitamago), 1px 0 0 var(--nitamago);
+}
+article.tiyo dl dd,
+.fuchichirimen {
+  color: #ccc;
+  text-shadow: 1px 1px 0 var(--chirimen), -1px -1px 0 var(--chirimen), -1px 1px 0 var(--chirimen), 1px -1px 0 var(--chirimen), 0px 1px 0 var(--chirimen), 0 -1px 0 var(--chirimen), -1px 0 0 var(--chirimen), 1px 0 0 var(--chirimen);
+}
+article.aki dl dd,
+.fuchimozuku {
+  color: #ccc;
+  text-shadow: 1px 1px 0 var(--mozukunori), -1px -1px 0 var(--mozukunori), -1px 1px 0 var(--mozukunori), 1px -1px 0 var(--mozukunori), 0px 1px 0 var(--mozukunori), 0 -1px 0 var(--mozukunori), -1px 0 0 var(--mozukunori), 1px 0 0 var(--mozukunori);
+}
+/* ーーーー
+左おにぎり
+ーーーーーー */
+main article {
+  & div.smemframe {
+    margin-top: 72px;
+  }
+  & div.kmemframe {
+    margin-top: 21px;
+    margin-left: 45px;
+  }
+  & div.smemframe,
+  div.kmemframe {
+    & p.nakami {
+      width: 80%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      & img {
+        border-radius: 90px 90px 0 0;
+      }
+    }
+  }
+}
+/* ーーーーー
+右フレックス
+ーーーーーー */
+main article div.right {
+  margin-bottom: 30px;
+}
+.noribox {
+  margin-bottom: 30px;
+  padding: 20px 45px 0 30px;
+  background-color: #fefefe;
+}
+hgroup,
+h2 {
+  border-bottom: 8px solid var(--kuronori);
+}
+hgroup,
+main article section h2,
+main article dl {
+  margin-bottom: 30px;
+}
+/* sサイズ */
+dl dt {
+  font-size: 18px;
+}
+/* mサイズ */
+dl dd {
+  font-size: 20px;
+}
+/* ーーーーーーー
+一覧へ戻るボタン
+ーーーーーーーー */
+.smemshake {
+  width: 177px;
+  left: 42%;
+  bottom: 0;
+}
+.kmemshake {
+  width: 177px;
+  left: 42%;
+  bottom: 0;
+}

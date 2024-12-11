@@ -1,0 +1,23 @@
+@import url(commons.css);
+/* コピペセット
+ＮＰＣ@media (max-width: 1199px)
+Ｔａｂ@media (max-width: 991px)
+携帯横@media (max-width: 767px)
+携帯縦@media (max-width: 575px)
+メディアクエリ */
+main article section.about {
+  width: 513px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+}
+
+section.member {
+  overflow: hidden;
+  font-size: 35px;
+}
+section.member ul li figure figcaption {
+  width: 100%;
+  bottom: 0;
+  background-color: #fff;
+}

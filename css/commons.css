@@ -1,0 +1,519 @@
+@import url("https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap");
+/* コピペセット
+ＮＰＣ@media (max-width: 1199px)
+Ｔａｂ@media (max-width: 991px)
+携帯横@media (max-width: 767px)
+携帯縦@media (max-width: 575px)
+メディアクエリ */
+
+/* 自動スクロールの呪文 */
+:root {
+  scroll-behavior: smooth;
+  --kuronori: #525252;
+  --mozukunori: #392e22;
+  --noriiro: #72a309;
+  --konbu: #017923;
+  --takana: #435f07;
+  --wakame: #547808;
+  --mentaiko: #f5775b;
+  --ume: #fb8bc7;
+  --shakeiro: #f5b4ac;
+  --nitamago: #eeb011;
+  --tsunamayo: #fcf77a;
+  --chirimen: #f3f8fe;
+  --salt: #d9d9d9;
+  --hovershake: #f8cbc5;
+}
+[id] {
+  scroll-margin-top: 105px;
+}
+body {
+  color: #333;
+  font-size: 16px;
+  font-family: "Yu Gothic Medium", YuGothic, sans-serif;
+  line-height: normal;
+  text-align: center;
+  background-color: #f9faff;
+  background-image: url(../Onigiri-img/00AllPage/OnigiriBack.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-attachment: fixed;
+  background-size: cover;
+  position: sticky;
+  top: 0;
+  z-index: -1;
+  cursor: url("/Onigiri-img/2NewsPage/OniSelectButton.png");
+  @media (max-width: 991px) {
+    background-position: top 60px center;
+  }
+}
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: 0.5s;
+}
+.container {
+  max-width: 1140px;
+  margin-left: 270px;
+  margin-right: 40px;
+  @media (max-width: 991px) {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
+.mb0 {
+  margin-bottom: 0px;
+}
+/* ーーーーー
+文字レフト
+ーーーーー */
+.mojileft {
+  text-align: left;
+}
+/* ーーーーーーーーー
+フレックスボックス
+ーーーーーーーーー */
+.allflex {
+  display: flex;
+}
+.flex {
+  display: flex;
+  @media (max-width: 1199px) and (min-width: 992px) {
+    display: block;
+  }
+  @media (max-width: 767px) {
+    display: block;
+  }
+}
+.flextabmb {
+  display: flex;
+  @media (max-width: 991px) and (min-width: 767px) {
+    display: block;
+  }
+  @media (max-width: 575px) {
+    display: block;
+  }
+}
+.flextab {
+  display: block;
+  @media (max-width: 767px) {
+    display: block;
+  }
+}
+.flexmb {
+  display: flex;
+  @media (max-width: 575px) {
+    display: block;
+  }
+}
+/* top1pr4tvフレボ解除後の上にくるアイテムにマジボ30px */
+.mb30tab {
+  @media (max-width: 1199px) and (min-width: 992px) {
+    margin-bottom: 30px;
+  }
+  @media (max-width: 767px) {
+    margin-bottom: 30px;
+  }
+}
+/* 均等配置（左右に余白なし） */
+.s-b {
+  justify-content: space-between;
+}
+/* 23とポプメはフレボしつつ直接折り返す */
+.se50wrap {
+  justify-content: space-evenly;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+/* 等間隔（左右に余白アリ） */
+.s-e {
+  justify-content: space-evenly;
+}
+/* 中央揃え */
+.j-c {
+  justify-content: center;
+}
+.gap20 {
+  gap: 20px;
+}
+/* 文字の下揃え */
+.mojisita {
+  align-items: baseline;
+}
+/* 箱の下揃え */
+.hakosita {
+  align-items: flex-end;
+}
+/* 1467の子要素(全部違うから.作る) */
+.flex1 {
+  flex: 1;
+}
+.flex2 {
+  flex: 2;
+}
+.flexauto {
+  flex: auto;
+}
+.norap {
+  white-space: nowrap;
+}
+.flex10em {
+  flex: 10em;
+}
+.slick-slide img {
+  margin: 0 auto;
+}
+/* ーーーーーーー
+ポジのリレアブ
+ーーーーーーー */
+.oya {
+  position: relative;
+}
+.kids {
+  position: absolute;
+}
+/* ーーーー
+のり色共通
+ーーーーー */
+.noribox {
+  background-color: #fff;
+  border: 5px solid var(--noriiro);
+}
+/* 背景なしメンバー用 */
+.noribox5px {
+  border: 5px solid var(--noriiro);
+}
+/* ノリボタン共通 */
+.noributton {
+  height: 35px;
+  padding: 0px 11px;
+  background-color: var(--noriiro);
+  border-radius: 20px;
+  &:hover {
+    background-color: #fff;
+  }
+}
+/* 以下@media共通に見えてマジ左右が逆なのでここ */
+/* ノリボタン５文字 */
+.noributton5 {
+  width: 132px;
+  margin-left: auto;
+  margin-right: 80px;
+  margin-bottom: 80px;
+  @media (max-width: 1199px) and (min-width: 992px) {
+    margin-right: 10px;
+  }
+  @media (max-width: 767px) {
+    margin-right: 30px;
+  }
+  @media (max-width: 575px) {
+    margin-bottom: -9px;
+  }
+}
+/* ノリボタン６文字 */
+.noributton6 {
+  width: 154px;
+  margin-left: 60px;
+  margin-right: auto;
+  margin-bottom: 20px;
+  @media (max-width: 1199px) and (min-width: 992px) {
+    margin-left: 10px;
+  }
+  @media (max-width: 767px) {
+    margin-left: 30px;
+  }
+  @media (max-width: 575px) {
+    margin-bottom: -9px;
+    /* ノリボタ高さ35-26=9px */
+  }
+}
+/* ーーーーー
+シャケ色共通
+ーーーーーー */
+.kasenshake {
+  width: fit-content;
+  border-bottom: 10px solid var(--shakeiro);
+}
+.undershake {
+  &::after {
+    content: "";
+    display: block;
+    background-color: var(--shakeiro);
+    /* widthを都度以下から付ける */
+    height: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.shakebutton {
+  height: 30px;
+  right: 10px;
+  bottom: 10px;
+  padding: 2px 27px 2px 6px;
+  background-image: url(../Onigiri-img/00AllPage/00AllButton/Yajirusi_off.svg);
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: right center;
+  background-color: var(--shakeiro);
+  border-radius: 20px;
+}
+.shakebutton:hover {
+  background-image: url(../Onigiri-img/00AllPage/00AllButton/Yajirusi_on.svg);
+  background-size: 24px 24px;
+  background-position: top 3px right 5px bottom 3px left 0;
+}
+.homeshake {
+  width: 129px;
+  left: 44%;
+  bottom: -60px;
+  @media (max-width: 767px) {
+    left: 35%;
+  }
+}
+/* 以下のマジボ70pxからの上記-60pxでホーム鮭のリレアブが上30下10になる */
+main article {
+  margin-bottom: 70px;
+}
+/* 鮭ボタン７文字 */
+.shakebutton7 {
+  width: 145px;
+}
+/* 鮭ボタン６文字 */
+.shakebutton6 {
+  width: 128px;
+}
+/* ーーーー
+文字サイズ
+ーーーーー */
+.onisize {
+  font-size: 40px;
+}
+.nsize {
+  font-size: 35px;
+}
+.llsize {
+  font-size: 24px;
+}
+.lsize {
+  font-size: 22px;
+}
+.msize {
+  font-size: 20px;
+}
+.ssize {
+  font-size: 18px;
+}
+/* ーーーー
+文字縁取り
+ーーーーー */
+.usufuchidori {
+  text-shadow: 1px 1px 0 #999, -1px -1px 0 #999, -1px 1px 0 #999, 1px -1px 0 #999, 0px 1px 0 #999, 0-1px 0 #999, -1px 0 0 #999, 1px 0 0 #999;
+}
+.koifuchidori {
+  text-shadow: 1px 1px 0 #ccc, -1px -1px 0 #ccc, -1px 1px 0 #ccc, 1px -1px 0 #ccc, 0px 1px 0 #ccc, 0-1px 0 #ccc, -1px 0 0 #ccc, 1px 0 0 #ccc;
+}
+.norifuchidori {
+  color: #ccc;
+  text-shadow: 1px 1px 0 var(--noriiro), -1px -1px 0 var(--noriiro), -1px 1px 0 var(--noriiro), 1px -1px 0 var(--noriiro), 0px 1px 0 var(--noriiro), 0-1px 0 var(--noriiro), -1px 0 0 var(--noriiro), 1px 0 0 var(--noriiro);
+}
+/* ーーー
+ヘッダー
+ーーーー */
+header {
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  @media (max-width: 991px) {
+    display: block;
+    width: 100%;
+    height: 0;
+  }
+}
+/* ーーーー
+フレックス左
+ーーーーー */
+header div.left {
+  flex-basis: 230px;
+  flex-shrink: 0;
+  padding: 12px 10px;
+  background-color: var(--noriiro);
+  @media (max-width: 991px) {
+    display: flex;
+    height: 60px;
+    padding: 4px 10px;
+  }
+}
+header h1 img.onilogo {
+  &:hover {
+    background-color: var(--konbu);
+  }
+  @media (max-width: 991px) {
+    width: auto;
+    height: 52px;
+  }
+}
+/* ここからがハンメアレンジ */
+.hmenu {
+  width: 86px;
+  height: 86px;
+  border: none;
+  background-color: var(--noriiro);
+  right: 72px;
+  bottom: 50%;
+  cursor: pointer;
+  @media (max-width: 991px) {
+    width: 50px;
+    height: 52px;
+    top: 4px;
+    right: 10px;
+  }
+}
+.hmenu.close .onime {
+  display: none;
+  background: unset;
+  transition: 0.5s;
+}
+.hmenu.close {
+  background-image: url(../Onigiri-img/00AllPage/1HeaderFrame/close.png);
+  background-repeat: no-repeat;
+  background-size: 50px;
+  background-position: center;
+  @media (max-width: 991px) {
+    background-size: 40px;
+  }
+}
+.hmenu:hover {
+  background-color: var(--konbu);
+}
+/* ここまでがハンメボタン */
+header p.ToiBotan {
+  bottom: 12px;
+  color: #fff;
+  font-size: 32px;
+  border: 5px solid var(--kuronori);
+  @media (max-width: 991px) {
+    width: 110px;
+    height: 52px;
+    right: 72px;
+    bottom: unset;
+    font-size: 16px;
+    border-width: 2px;
+  }
+}
+header p.ToiBotan:hover {
+  background-color: var(--konbu);
+}
+/* ーーーー
+フレックス右
+ハンメのポプメのナブウル
+ーーーーー */
+header nav.right {
+  display: none;
+  flex-basis: auto;
+  background-color: var(--noriiro);
+  @media (max-width: 991px) {
+    height: 100%;
+  }
+  & ul {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 25px;
+    flex-wrap: wrap;
+    padding: 10% 13%;
+    /* ノートPCは1199px以下 */
+    @media (max-width: 1199px) {
+      padding: 10% 0;
+    }
+    /* タブレットは991px以下 */
+    @media (max-width: 991px) {
+      margin-top: -2px;
+      padding: 5% 0;
+      display: flex;
+      flex-wrap: wrap;
+      background-color: var(--noriiro);
+    }
+    /* スマホ横は767px以下 */
+    @media (max-width: 767px) {
+      padding: 0 0 100px 0;
+      gap: 0;
+    }
+  }
+}
+header nav.right ul li {
+  @media (max-height: 670px) {
+    margin-bottom: -35px;
+  }
+}
+/* ーーーーーーー
+パンくずリスト
+ーーーーーーー */
+main ol {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: #fff;
+  background-color: var(--noriiro);
+  /* 以下不等号 */
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  @media (max-width: 991px) {
+    margin-top: 90px;
+  }
+  & li {
+    margin-left: 20px;
+  }
+}
+
+main ol li:not(:last-of-type)::after {
+  content: "＞";
+  margin: 0 0.6em; /* 記号の左右の余白 */
+  color: #fff; /* 記号の色 */
+}
+/* ーーー
+フッター
+ーーーー */
+footer {
+  height: 60px;
+  background-color: var(--kuronori);
+  color: #fff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 70px;
+}
+footer p.pagetop {
+  right: 10px;
+  bottom: 10px;
+}
+footer p a img {
+  width: 40px;
+  height: 40px;
+}
+footer p.copyright {
+  max-width: 1690px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: right;
+  @media (max-width: 991px) {
+    text-align: center;
+  }
+}
+/* 共通メディアクエリー */
+.none {
+  @media (max-width: 1199px) and (min-width: 992px) {
+    display: none;
+  }
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+/* グッズ画像を作る
+１虎視たんしかTシャツ
+２背景稲作のおにぎりアクスタ
+３名前入りタオル
+４背中にコメの出身地、胸におにぎり、斜めに名前ハッピ
+グッズをクリックしたらクローバーになるようにする*/
+/* only写真調整から再開！！！newsアコーディオンにクラス名付けてカンマー */
