@@ -35,16 +35,22 @@ body {
   text-align: center;
   background-color: #f9faff;
   background-image: url(../Onigiri-img/00AllPage/OnigiriBack.png);
-  background-repeat: no-repeat;
+  /* 背景画像をスクロールせずに固定 */
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  /* background-repeat: no-repeat;
   background-position: top center;
   background-attachment: fixed;
   background-size: cover;
   position: sticky;
   top: 0;
-  z-index: -1;
-  cursor: url("/Onigiri-img/2NewsPage/OniSelectButton.png");
+  z-index: -1; */
   @media (max-width: 991px) {
-    background-position: top 60px center;
+    /* background-position: top 60px center; */
+    background-attachment: unset;
+    background-size: contain;
+    background-repeat: repeat-y;
   }
 }
 a {
