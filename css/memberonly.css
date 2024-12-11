@@ -76,11 +76,21 @@ main article {
   }
   & div.smemframe,
   div.kmemframe {
+    @media (max-width: 767px) {
+      width: 30%;
+      height: 30%;
+    }
     & p.nakami {
       width: 80%;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+      @media (max-width: 1199px) {
+        top: 60%;
+      }
+      @media (max-width: 991px) {
+        top: 30%;
+      }
       & img {
         border-radius: 90px 90px 0 0;
       }

@@ -146,6 +146,10 @@ a {
 .mojisita {
   align-items: baseline;
 }
+/* 箱の上揃え */
+.hakoue {
+  align-items: flex-start;
+}
 /* 箱の下揃え */
 .hakosita {
   align-items: flex-end;

@@ -10,14 +10,32 @@ main article section.about {
   margin-left: auto;
   margin-right: auto;
   background-color: #fff;
+  @media (max-width: 575px) {
+    width: 90%;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
 }
 
 section.member {
   overflow: hidden;
-  font-size: 35px;
+  font-size: 30px;
 }
-section.member ul li figure figcaption {
-  width: 100%;
-  bottom: 0;
-  background-color: #fff;
+section.member ul {
+  @media (max-width: 1199px) {
+    gap: 5px;
+  }
+  & li {
+    @media (max-width: 1199px) {
+      width: 30%;
+    }
+    @media (max-width: 767px) {
+      font-size: 13px;
+    }
+  }
+  & figure figcaption {
+    width: 100%;
+    bottom: 0;
+    background-color: #fff;
+  }
 }
