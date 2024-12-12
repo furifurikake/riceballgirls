@@ -70,6 +70,9 @@ a {
 .mb0 {
   margin-bottom: 0px;
 }
+main span {
+  display: inline-block;
+}
 /* ーーーーー
 文字レフト
 ーーーーー */
@@ -361,6 +364,9 @@ header div.left {
     height: 60px;
     padding: 4px 10px;
   }
+  @media (max-width: 389px) {
+    padding: 4px 3px;
+  }
 }
 header h1 img.onilogo {
   &:hover {
@@ -385,6 +391,9 @@ header h1 img.onilogo {
     height: 52px;
     top: 4px;
     right: 10px;
+  }
+  @media (max-width: 389px) {
+    right: 3px;
   }
 }
 .hmenu.close .onime {
@@ -417,6 +426,9 @@ header p.ToiBotan {
     bottom: unset;
     font-size: 16px;
     border-width: 2px;
+  }
+  @media (max-width: 389px) {
+    right: 60px;
   }
 }
 header p.ToiBotan:hover {

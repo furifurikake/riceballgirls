@@ -73,6 +73,8 @@ main article {
       width: 30%;
       height: 30%;
       margin-bottom: 15px;
+      margin-left: auto;
+      margin-right: auto;
     }
     @media (max-width: 575px) {
       width: 40%;
@@ -80,15 +82,15 @@ main article {
     }
     & p.nakami {
       width: 80%;
-      top: 50%;
+      top: 60%;
       left: 50%;
       transform: translate(-50%, -50%);
       @media (max-width: 1199px) {
-        top: 60%;
+        width: 50%;
       }
       @media (max-width: 991px) {
         width: 50%;
-        top: 70%;
+        top: 63%;
       }
       & img {
         border-radius: 90px 90px 0 0;
@@ -106,6 +108,9 @@ main article div.right {
   margin-bottom: 30px;
   padding: 20px 45px 0 30px;
   background-color: #fefefe;
+  @media (max-width: 389px) {
+    padding: 20px;
+  }
 }
 hgroup,
 h2 {
@@ -115,6 +120,9 @@ hgroup,
 main article section h2,
 main article dl {
   margin-bottom: 30px;
+}
+div.flextab {
+  gap: 5px;
 }
 /* sサイズ */
 dl dt {
@@ -127,10 +135,47 @@ dl dd {
 /* ーーーーーーー
 一覧へ戻るボタン
 ーーーーーーーー */
+section.shita {
+  @media (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+}
+main article {
+  @media (max-width: 767px) {
+    margin-bottom: 130px;
+  }
+  @media (max-width: 575px) {
+    margin-bottom: 90px;
+  }
+}
+.homeshake {
+  @media (max-width: 767px) {
+    left: 42%;
+    bottom: -120px;
+  }
+  @media (max-width: 575px) {
+    left: 37%;
+    bottom: -80px;
+  }
+  @media (max-width: 389px) {
+    left: 28%;
+  }
+}
 .smemshake {
   width: 177px;
   left: 42%;
   bottom: 0;
+  @media (max-width: 767px) {
+    left: 38%;
+    bottom: -60px;
+  }
+  @media (max-width: 575px) {
+    left: 32%;
+    bottom: -40px;
+  }
+  @media (max-width: 389px) {
+    left: 19%;
+  }
 }
 .kmemshake {
   width: 177px;
