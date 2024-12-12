@@ -234,6 +234,9 @@ main span {
   @media (max-width: 575px) {
     margin-bottom: -9px;
   }
+  @media (max-width: 389px) {
+    margin-right: 5px;
+  }
 }
 /* ノリボタン６文字 */
 .noributton6 {
@@ -250,6 +253,9 @@ main span {
   @media (max-width: 575px) {
     margin-bottom: -9px;
     /* ノリボタ高さ35-26=9px */
+  }
+  @media (max-width: 389px) {
+    margin-left: 5px;
   }
 }
 /* ーーーーー
@@ -330,6 +336,9 @@ main article {
 }
 .lsize {
   font-size: 22px;
+  @media (max-width: 991px) {
+    font-size: 20px;
+  }
 }
 .msize {
   font-size: 20px;

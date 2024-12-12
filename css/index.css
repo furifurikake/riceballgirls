@@ -256,6 +256,9 @@ main section.goods div {
     background-size: 72.42px;
     padding-bottom: 10.15px;
   }
+  @media (max-width: 389px) {
+    background-position: left 33.86px top 160.43px;
+  }
 }
 /* 80周年アンダー鮭 */
 main section.goods dl dt {
@@ -263,7 +266,7 @@ main section.goods dl dt {
   margin-bottom: 29.05px;
   text-shadow: 11px 9px 7px rgba(0, 0, 0, 0.25);
   &::after {
-    width: 310px;
+    width: 13.5em;
   }
   @media (max-width: 575px) {
     margin-bottom: 9.05px;
