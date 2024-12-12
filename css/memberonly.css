@@ -150,15 +150,10 @@ main article {
 }
 .homeshake {
   @media (max-width: 767px) {
-    left: 42%;
     bottom: -120px;
   }
   @media (max-width: 575px) {
-    left: 37%;
     bottom: -80px;
-  }
-  @media (max-width: 389px) {
-    left: 28%;
   }
 }
 .smemshake,

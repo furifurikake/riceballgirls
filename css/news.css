@@ -103,22 +103,23 @@ article section div.allflex {
   }
 }
 .leftside {
-  flex-basis: 80px;
+  flex-basis: 4em;
   text-align: left;
 }
 .rightside {
   flex: auto;
 }
 /* mサイズ3文字 */
-/* .shake3moji {
+.shake3moji {
   &::after {
-    width: 60px;
+    width: 3em;
+    margin-right: 0.8em;
     text-align: left;
   }
-} */
+}
 /* mサイズ4文字 */
-/* .shake4moji {
+.shake4moji {
   &::after {
-    width: 80px;
+    width: 4em;
   }
-} */
+}

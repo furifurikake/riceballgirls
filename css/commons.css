@@ -121,6 +121,12 @@ main span {
     display: block;
   }
 }
+.flexmbSE {
+  display: flex;
+  @media (max-width: 389px) {
+    display: block;
+  }
+}
 /* top1pr4tvフレボ解除後の上にくるアイテムにマジボ30px */
 .mb30tab {
   @media (max-width: 1199px) and (min-width: 992px) {
@@ -286,7 +292,13 @@ main span {
   left: 44%;
   bottom: -60px;
   @media (max-width: 767px) {
-    left: 35%;
+    left: 42%;
+  }
+  @media (max-width: 575px) {
+    left: 37%;
+  }
+  @media (max-width: 389px) {
+    left: 28%;
   }
 }
 /* 以下のマジボ70pxからの上記-60pxでホーム鮭のリレアブが上30下10になる */
@@ -309,6 +321,9 @@ main article {
 }
 .nsize {
   font-size: 35px;
+  @media (max-width: 991px) {
+    font-size: 25px;
+  }
 }
 .llsize {
   font-size: 24px;
@@ -318,6 +333,9 @@ main article {
 }
 .msize {
   font-size: 20px;
+  @media (max-width: 991px) {
+    font-size: 18px;
+  }
 }
 .ssize {
   font-size: 18px;
@@ -492,6 +510,10 @@ main ol {
   }
   & li {
     margin-left: 20px;
+    /* @media (max-width: 575px) {
+      width: 30%;
+      height: 30%;
+    } */
   }
 }
 
