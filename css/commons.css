@@ -469,15 +469,12 @@ header nav.right {
   display: none;
   flex-basis: auto;
   background-color: var(--noriiro);
-  @media (max-width: 991px) {
-    height: 100%;
-  }
   & ul {
     display: flex;
     justify-content: space-evenly;
-    gap: 25px;
     flex-wrap: wrap;
-    padding: 10% 13%;
+    margin: 0;
+    padding: 5% 10%;
     /* ノートPCは1199px以下 */
     @media (max-width: 1199px) {
       padding: 10% 0;
@@ -485,21 +482,33 @@ header nav.right {
     /* タブレットは991px以下 */
     @media (max-width: 991px) {
       margin-top: -2px;
-      padding: 5% 0;
-      display: flex;
-      flex-wrap: wrap;
+      padding: 10%;
       background-color: var(--noriiro);
     }
     /* スマホ横は767px以下 */
     @media (max-width: 767px) {
       padding: 0 0 100px 0;
-      gap: 0;
     }
-  }
-}
-header nav.right ul li {
-  @media (max-height: 670px) {
-    margin-bottom: -35px;
+    & li {
+      margin-right: 140px;
+      @media (max-width: 991px) {
+        margin-left: 30px;
+        margin-right: 30px;
+      }
+      @media (max-width: 400px) {
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+      @media (max-width: 389px) {
+        margin: 0;
+      }
+      & img {
+        width: 220px;
+        @media (max-width: 575px) {
+          width: 130px;
+        }
+      }
+    }
   }
 }
 /* ーーーーーーー
@@ -569,10 +578,3 @@ footer p.copyright {
     display: none;
   }
 }
-/* グッズ画像を作る
-１虎視たんしかTシャツ
-２背景稲作のおにぎりアクスタ
-３名前入りタオル
-４背中にコメの出身地、胸におにぎり、斜めに名前ハッピ
-グッズをクリックしたらクローバーになるようにする*/
-/* only写真調整から再開！！！newsアコーディオンにクラス名付けてカンマー */
