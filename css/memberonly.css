@@ -161,7 +161,8 @@ main article {
     left: 28%;
   }
 }
-.smemshake {
+.smemshake,
+.kmemshake {
   width: 177px;
   left: 42%;
   bottom: 0;
@@ -176,9 +177,4 @@ main article {
   @media (max-width: 389px) {
     left: 19%;
   }
-}
-.kmemshake {
-  width: 177px;
-  left: 42%;
-  bottom: 0;
 }
