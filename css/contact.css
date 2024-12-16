@@ -78,6 +78,7 @@ main textarea {
   margin-bottom: 37px;
 }
 main form button {
+  --webkit-appearance: none;
   border: none;
 }
 main form p {
