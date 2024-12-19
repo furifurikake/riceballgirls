@@ -423,7 +423,8 @@ header h1 img.onilogo {
     right: 3px;
   }
 }
-.hmenu img {
+/* ここアイフォン変 */
+.hmenu img.onime {
   max-width: 100%;
 }
 .hmenu.close .onime {
