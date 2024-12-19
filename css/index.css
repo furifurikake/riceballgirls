@@ -20,6 +20,11 @@ main section {
 /* おにぎりh2と下を縮める */
 main section > h2 {
   margin-bottom: -22px;
+  & img {
+    @media (max-width: 767px) {
+      width: 200px;
+    }
+  }
 }
 /* ーーーー
 セクション１
@@ -159,6 +164,9 @@ section.member ul li figure figcaption {
     left: 20%;
     bottom: unset;
     background-color: unset;
+  }
+  @media (max-width: 767px) {
+    left: 16%;
   }
 }
 /* ーーー

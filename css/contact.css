@@ -24,6 +24,9 @@ main article div.tyuigaki {
   @media (max-width: 767px) {
     padding: 20px 10px 40px;
   }
+  @media (max-width: 389px) {
+    border-radius: 60px;
+  }
   & h1 {
     color: #ccc;
     margin-bottom: 20px;
@@ -78,7 +81,6 @@ main textarea {
   margin-bottom: 37px;
 }
 main form button {
-  --webkit-appearance: none;
   border: none;
 }
 main form p {
@@ -86,10 +88,16 @@ main form p {
 }
 /* 鮭ボタン２文字 */
 .shakebutton2 {
+  --webkit-appearance: none;
   width: 71px;
-  right: 47%;
-  left: auto;
+  left: 47%;
   bottom: 37px;
+  @media (max-width: 767px) {
+    left: 42%;
+  }
+  @media (max-width: 575px) {
+    left: 37%;
+  }
 }
 /* 個人情報保護法 */
 main article section.noribox {

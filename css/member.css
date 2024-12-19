@@ -33,7 +33,13 @@ section.member ul {
       font-size: 13px;
     }
   }
-  & figure figcaption {
+  & figure {
+    border: 5px solid var(--noriiro);
+    @media (max-width: 767px) {
+      border-width: 3px;
+    }
+  }
+  & figcaption {
     width: 100%;
     bottom: 0;
     background-color: #fff;

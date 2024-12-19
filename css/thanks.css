@@ -7,7 +7,8 @@
 メディアクエリ */
 main article {
   padding: 100px 110px;
-  margin-bottom: unset;
+  /* margin-left: 30px;
+  margin-right: 30px; */
   border-radius: 90px;
   @media (max-width: 1199px) {
     padding: 100px 20px;
@@ -18,6 +19,9 @@ main article {
   @media (max-width: 767px) {
     padding: 10px 10px 40px;
   }
+  @media (max-width: 389px) {
+    border-radius: 60px;
+  }
   & h1 {
     color: #ccc;
     margin-bottom: 65px;
@@ -27,6 +31,6 @@ main article {
   }
 }
 /* サンクスのホーム鮭だけめっちゃ下に持ってく */
-main p.homeshake {
+/* main p.homeshake {
   bottom: -70px;
-}
+} */
